@@ -16,8 +16,8 @@ Contact details (phone, WhatsApp and email) appear in `index.html` (contact sect
 
 Also:
 
-- `og:image` in the `<head>` uses a relative path. Once the domain is known, change it to the full URL (for example `https://yourdomain.in/img/og.jpg`) so link previews work on WhatsApp and social apps.
-- Add a `sitemap.xml` and a `<link rel="canonical">` once the domain is known.
+- The site is set up for `https://hanuverse.in`: the canonical links, share-preview tags, structured data (JSON-LD), `sitemap.xml` and `robots.txt` all use it. If the domain changes, search for `hanuverse.in` and replace it everywhere.
+- Once it is live, add the site to Google Search Console and submit `https://hanuverse.in/sitemap.xml`.
 - Have a lawyer review `privacy.html` and `terms.html`, then update the "Last updated" date if anything changes.
 - Get a quick written OK from Dream Stream Events and The Wedding Toli for the photos under the **Partner Work** tab.
 - Some HanuVerse photos are Instagram reel cover frames and may not match their labels (for example "Sangeet Night"). Swap in original photos where you can.
