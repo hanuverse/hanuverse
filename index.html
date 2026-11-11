@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HanuVerse Enterprises | Event Production, Decor &amp; Management, Jaipur</title>
+<meta name="description" content="HanuVerse Enterprises handles event production, stage and decor, and on-ground management for college fests, corporate events, festive decor and celebrations in Jaipur and beyond.">
+<meta name="theme-color" content="#F3EAD6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HanuVerse Enterprises">
+<meta property="og:title" content="HanuVerse Enterprises | Event Production, Decor &amp; Management">
+<meta property="og:description" content="Production, decor and on-ground management for college fests, corporate events, festive decor and celebrations in Jaipur and beyond.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>(function(d){d.classList.add("js");var s=false;try{s=sessionStorage.getItem("hv-seen")==="1";sessionStorage.setItem("hv-seen","1")}catch(e){}if(!s&&!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches))d.classList.add("intro","lock")})(document.documentElement)</script>
+<style>
+/* plain classic ampersand instead of Playfair's ornate one */
+@font-face{font-family:"HV Amp";src:local("Georgia"),local("Times New Roman"),local("Liberation Serif");unicode-range:U+0026}
+:root{
+  --cream:#F3EAD6; --paper:#EADFC8; --stone:#DCD0B6; --ink:#5E2A23; --ink-2:#7A4A40;
+  --gold:#B7822F; --gold-2:#D9AE5E; --line:rgba(91,42,34,.2);
+  --serif:"HV Amp","Playfair Display",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font:400 16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html.lock{overflow:hidden}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.eyebrow{font-size:12px;letter-spacing:.34em;color:var(--gold);text-transform:uppercase;font-weight:600}
+.btn{display:inline-block;background:var(--ink);color:var(--cream);padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.06em;border:1.5px solid var(--ink);transition:.25s;cursor:pointer}
+.btn:hover{background:var(--gold);border-color:var(--gold);transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(91,42,34,.5)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+
+/* ---------- opening: velvet curtain reveal ---------- */
+#intro{display:none;position:fixed;inset:0;z-index:100;overflow:hidden;background:#140605;cursor:pointer}
+html.intro #intro{display:block}
+#intro .cur{position:absolute;top:0;bottom:0;width:51%;z-index:2;transition:transform 1.8s cubic-bezier(.7,0,.2,1);
+  background:linear-gradient(90deg,rgba(0,0,0,.4),transparent 25%,transparent 75%,rgba(0,0,0,.4)),repeating-linear-gradient(90deg,#4A1218 0,#7E2630 22px,#A23A45 31px,#6A1C25 46px,#4A1218 58px)}
+#intro .cur.l{left:0}#intro .cur.r{right:0}
+#intro .cur::after{content:"";position:absolute;left:0;right:0;bottom:0;height:30px;border-top:4px solid #B7822F;background:repeating-linear-gradient(90deg,#E2B866 0 2px,transparent 2px 6px)}
+#intro.open .cur.l{transform:translateX(-102%)}#intro.open .cur.r{transform:translateX(102%)}
+#intro .val{position:absolute;left:0;right:0;top:0;height:84px;z-index:3;transition:transform 1.5s .15s cubic-bezier(.7,0,.2,1);
+  background:repeating-linear-gradient(90deg,#4A1218 0,#7E2630 22px,#A23A45 31px,#6A1C25 46px,#4A1218 58px);border-bottom:4px solid #B7822F;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+#intro .val::after{content:"";position:absolute;left:0;right:0;top:100%;height:34px;background:radial-gradient(circle at 50% 0,#7E2630 0 30px,#D9AE5E 31px 34px,transparent 35px) 0 0/76px 34px repeat-x}
+#intro.open .val{transform:translateY(-150%)}
+#intro .ctr{position:absolute;inset:0;z-index:4;display:grid;place-items:center;text-align:center;color:var(--cream);transition:opacity .7s,transform 1.4s}
+#intro.open .ctr{opacity:0;transform:scale(1.12)}
+#intro .ctr>div{position:relative}
+#intro .ctr>div::before{content:"";position:absolute;left:50%;top:42%;width:min(120vw,680px);aspect-ratio:1;translate:-50% -50%;border-radius:50%;z-index:-1;
+  background:radial-gradient(circle,rgba(255,206,120,.42),rgba(255,206,120,.08) 45%,transparent 66%);animation:spotin 1.4s both}
+#intro .ctr img{width:min(62vw,290px);margin:0 auto 24px;animation:pop 1.2s .15s cubic-bezier(.2,.9,.3,1.15) both;filter:drop-shadow(0 6px 24px rgba(0,0,0,.45))}
+#intro .orn{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold-2);opacity:0;animation:rise .8s .8s forwards}
+#intro .orn i{width:56px;height:1px;background:var(--gold-2)}
+#intro .line{margin-top:12px;font:italic 500 clamp(22px,4.4vw,32px) var(--serif);opacity:0;animation:rise .8s 1s forwards}
+#intro .sub{margin-top:8px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-2);opacity:0;animation:rise .8s 1.3s forwards}
+@keyframes spotin{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes pop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+@keyframes rise{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+
+/* ---------- nav ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:20;transition:.3s}
+nav.solid{background:rgba(243,234,214,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:600 18px var(--serif);letter-spacing:.14em}
+.brand img{height:44px;width:auto}
+nav ul{display:flex;gap:28px;list-style:none;font-size:14px}
+nav ul a{text-decoration:none;color:var(--ink-2);transition:.2s}
+nav ul a:hover{color:var(--gold)}
+nav:not(.solid) .brand{color:var(--cream)}
+nav:not(.solid) ul a{color:#E8D6B4}
+nav:not(.solid) .btn{background:var(--gold);border-color:var(--gold);color:#fff}
+.brand .lt{display:none}nav:not(.solid) .brand .dk{display:none}nav:not(.solid) .brand .lt{display:block}
+.menu{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--ink)}
+.menu span{display:block;width:22px;height:2px;background:currentColor;margin:5px auto;transition:.3s}
+nav:not(.solid) .menu{color:var(--cream)}
+nav.open .menu span:nth-child(1){transform:translateY(7px) rotate(45deg)}nav.open .menu span:nth-child(2){opacity:0}nav.open .menu span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:760px){.brand span{display:none}nav .wrap>.btn{display:none}.menu{display:block}
+  nav ul{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;gap:0;background:var(--cream);border-bottom:1px solid var(--line);padding:6px 20px 14px;box-shadow:0 20px 30px -20px rgba(0,0,0,.4)}
+  nav.open ul{display:flex}nav ul a,nav:not(.solid) ul a{display:block;padding:13px 0;font-size:17px;color:var(--ink);border-bottom:1px solid var(--line)}}
+
+/* ---------- hero: classical stage ---------- */
+.hero{min-height:100svh;display:grid;align-items:center;position:relative;overflow:hidden;padding:110px 0 80px;color:var(--cream);
+  background:radial-gradient(55% 55% at 72% 45%,rgba(226,170,80,.30),transparent 70%),radial-gradient(40% 40% at 10% 90%,rgba(166,58,69,.35),transparent 70%),linear-gradient(160deg,#2B0F0B 0%,#4A1C16 50%,#240C09 100%)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.07;background:radial-gradient(circle at 50% 50%,#F3D38E 0 1.5px,transparent 2px) 0 0/26px 26px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center;position:relative;z-index:2}
+.hero .eyebrow{color:var(--gold-2)}
+.hero .rule{display:flex;align-items:center;gap:12px;color:var(--gold-2);margin:16px 0 4px}.hero .rule i{width:60px;height:1px;background:var(--gold-2)}
+.hero h1{font-size:clamp(42px,6.2vw,80px);margin:14px 0 22px;color:#FFF4DC}
+.hero h1 em{color:var(--gold-2);font-style:italic;display:block}
+.hero p{max-width:470px;color:#E3D2B4;font-size:17px;margin-bottom:32px}
+.hero .btn{background:var(--gold);border-color:var(--gold);color:#fff}
+.hero .btn:hover{background:#FFF4DC;border-color:#FFF4DC;color:var(--ink)}
+.hero .btn.ghost{background:transparent;border-color:#E8D6B4;color:#FFF4DC}
+.hero .btn.ghost:hover{background:#FFF4DC;color:var(--ink)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stage-wrap{width:100%;max-width:580px;margin-inline:auto;filter:drop-shadow(0 40px 50px rgba(0,0,0,.55))}
+#stage{width:100%;height:auto;display:block}
+#stage.paused *{animation-play-state:paused!important}
+#stage .scene{opacity:0;transform:translateY(14px);transition:opacity .9s ease,transform .9s ease}
+#stage .scene.on{opacity:1;transform:none}
+#stage .tw{animation:tw 2.4s ease-in-out infinite}
+@keyframes tw{50%{opacity:.25}}
+#stage .par{animation:tw 1.3s ease-in-out infinite}
+#stage .eq{transform-box:fill-box;transform-origin:50% 100%;animation:eq .8s ease-in-out infinite alternate}
+@keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
+#stage .flick{transform-box:fill-box;transform-origin:50% 100%;animation:flick .45s ease-in-out infinite alternate}
+@keyframes flick{to{transform:scaleY(1.35) scaleX(.82)}}
+#stage .strand{transform-box:fill-box;transform-origin:50% 0;animation:sway 4.5s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+#stage .curtain{transform-box:fill-box;transform-origin:50% 0;animation:curt 7s ease-in-out infinite alternate}
+@keyframes curt{from{transform:skewX(-1deg)}to{transform:skewX(1deg)}}
+#stage .beam{transform-box:fill-box;transform-origin:50% 0;animation:beam 7s ease-in-out infinite alternate;mix-blend-mode:screen}
+@keyframes beam{from{transform:rotate(-9deg)}to{transform:rotate(9deg)}}
+#stage .glow{animation:glow 4s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.45}to{opacity:.85}}
+.now{margin-top:20px;text-align:center;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#CDB894}
+.now b{display:block;margin-top:4px;font:italic 500 24px var(--serif);letter-spacing:0;text-transform:none;color:var(--gold-2);min-height:32px}
+.dots{display:flex;gap:9px;justify-content:center;margin-top:10px}
+.dots button{width:10px;height:10px;border-radius:50%;border:1px solid var(--gold-2);background:transparent;cursor:pointer;padding:0;transition:.3s}
+.dots button.on{background:var(--gold-2);width:26px;border-radius:6px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:28px}.stage-wrap{max-width:440px}.scroll{display:none}}
+.scroll{position:absolute;bottom:22px;left:50%;translate:-50% 0;font-size:11px;letter-spacing:.3em;color:#CDB894;z-index:2}
+.scroll::after{content:"";display:block;width:1px;height:34px;background:#CDB894;margin:8px auto 0;animation:line 1.8s infinite}
+@keyframes line{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- picture tiles (real photo or branded fallback) ---------- */
+.tile{position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:linear-gradient(150deg,var(--ink) 0%,#7A3B2F 55%,var(--gold) 150%);box-shadow:0 18px 40px -18px rgba(91,42,34,.6)}
+.tile::before{content:"";position:absolute;inset:0;background:url(img/logo-mark-light.png) center/38% no-repeat;opacity:.22}
+.tile img.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.tile:hover img.ph{transform:scale(1.07)}
+.tile .cap{position:absolute;left:0;right:0;bottom:0;padding:34px 18px 16px;color:#fff;background:linear-gradient(transparent,rgba(40,15,10,.82));font:600 20px var(--serif)}
+
+/* ---------- ribbon ---------- */
+.ribbon{background:var(--ink);color:var(--cream);overflow:hidden;white-space:nowrap;padding:16px 0;font:italic 500 22px var(--serif)}
+.ribbon div{display:inline-block;animation:marq 32s linear infinite}
+.ribbon span{margin:0 26px}.ribbon i{color:var(--gold-2);font-style:normal}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:92px 0}
+.head{text-align:center;margin-bottom:50px}
+.head h2{font-size:clamp(34px,5.4vw,58px);margin-top:12px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:32px 26px;transition:.35s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-8px);background:var(--ink);color:var(--cream);box-shadow:0 24px 40px -22px rgba(91,42,34,.7)}
+.card:hover p{color:var(--stone)}
+.card .n{font:italic 500 44px var(--serif);color:var(--gold);line-height:1}
+.card h3{font-size:26px;margin:12px 0 8px}
+.card p{font-size:15px;color:var(--ink-2);transition:.35s}
+
+.stats{background:var(--paper);border-block:1px solid var(--line);padding:56px 0}
+.stats .grid{text-align:center}
+.stats b{font:600 58px var(--serif);color:var(--gold);display:block;line-height:1}
+.stats span{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
+
+.filters{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+.filters button{font:600 13px Inter,sans-serif;letter-spacing:.06em;padding:9px 20px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:.2s}
+.filters button.on,.filters button:hover{background:var(--ink);color:var(--cream)}
+.work{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(250px,44%),1fr))}
+.work .tile{cursor:zoom-in;aspect-ratio:3/4}
+#lb small a{text-decoration:underline}
+.work .tile.hide{display:none}
+.tag{position:absolute;top:14px;left:14px;z-index:2;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;background:var(--cream);color:var(--ink);padding:5px 11px;border-radius:999px}
+
+.band{background:var(--ink);color:var(--cream);text-align:center;padding:84px 0;position:relative;overflow:hidden}
+.band h2{font-size:clamp(30px,5vw,54px);margin-top:12px}
+.band h2 em{color:var(--gold-2)}
+.band p{max-width:520px;margin:16px auto 0;color:var(--stone)}
+
+.steps{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));counter-reset:s}
+.step{border-top:2px solid var(--gold);padding-top:18px}
+.step::before{counter-increment:s;content:"0" counter(s);font:italic 500 40px var(--serif);color:var(--gold)}
+.step h3{font-size:24px;margin:6px 0}
+.step p{font-size:15px;color:var(--ink-2)}
+
+.panel{margin-top:54px;border:1px solid var(--gold);border-radius:18px;padding:34px;background:var(--paper)}
+.panel ul{margin-top:14px;display:grid;gap:10px 30px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));list-style:none}
+.panel li{padding-left:24px;position:relative;font-size:15px;color:var(--ink-2)}
+.panel li::before{content:"◆";position:absolute;left:0;color:var(--gold);font-size:11px;top:4px}
+
+.contact{text-align:center;background:radial-gradient(60% 80% at 50% 100%,rgba(217,174,94,.35),transparent 70%)}
+.contact img{width:150px;margin:0 auto 22px}
+.contact h2{font-size:clamp(34px,6vw,64px)}
+.contact p{max-width:520px;margin:14px auto 30px;color:var(--ink-2)}
+.ccards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;max-width:900px;margin:0 auto 22px;text-align:left}
+.ccard{display:block;padding:20px 22px;border:1px solid var(--gold);border-radius:16px;background:var(--cream);text-decoration:none;transition:.25s}
+.ccard:hover{background:var(--ink);color:var(--cream);transform:translateY(-3px)}
+.ccard small{display:block;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.ccard b{display:block;margin-top:6px;font:600 19px var(--serif);overflow-wrap:anywhere}
+.where{font-size:14px}
+.foot{background:#1F0B08;color:#CDB894;padding:64px 0 0;font-size:14px}
+.fgrid{display:grid;gap:36px;grid-template-columns:1.5fr 1fr 1fr}
+.flogo{width:150px;margin-bottom:16px}
+.foot p{max-width:320px;line-height:1.7}
+.foot h4{font:600 12px Inter,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-2);margin-bottom:14px}
+.foot a,.fgrid span{display:block;color:#E8D6B4;text-decoration:none;margin:7px 0}
+.foot a:hover{color:var(--gold-2)}
+.fbot{border-top:1px solid rgba(217,174,94,.22);margin-top:48px;padding:20px;text-align:center;font-size:12px;color:#A8957A}
+.fbot .legal{display:inline-flex;gap:18px;margin-left:22px}.fbot .legal a{display:inline;margin:0;color:#E8D6B4}
+@media(max-width:700px){.fbot .legal{display:flex;justify-content:center;margin:10px 0 0}}
+@media(max-width:700px){.fgrid{grid-template-columns:1fr}}
+
+.pnote{text-align:center;font-size:13px;color:var(--ink-2);margin-top:22px}
+
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:60;background:rgba(40,15,10,.92);display:none;place-items:center;padding:20px;cursor:zoom-out}
+#lb.open{display:grid}
+.lbx{position:absolute;top:16px;right:18px;width:46px;height:46px;border-radius:50%;border:1px solid var(--gold-2);background:rgba(0,0,0,.3);color:var(--cream);font-size:26px;line-height:1;cursor:pointer}
+.tile:focus-visible,.btn:focus-visible,.ccard:focus-visible{outline:3px solid var(--gold-2);outline-offset:3px}
+#lb figure{max-width:min(92vw,900px);text-align:center;color:var(--cream)}
+#lb img{max-height:78vh;margin:0 auto;border-radius:12px}
+#lb .ph-fallback{width:min(80vw,420px);aspect-ratio:4/5;border-radius:18px;background:linear-gradient(150deg,var(--ink),#7A3B2F 55%,var(--gold) 150%);display:grid;place-items:center;margin:0 auto}
+#lb .ph-fallback img{width:50%;opacity:.6}
+#lb figcaption{margin-top:14px;font:600 22px var(--serif)}
+#lb small{display:block;color:var(--stone);font:400 14px Inter}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div id="intro" aria-label="Opening">
+  <div class="cur l"></div><div class="cur r"></div><div class="val"></div>
+  <div class="ctr"><div>
+    <img src="img/logo-full-light.png" alt="HanuVerse Enterprises">
+    <div class="orn"><i></i>◆<i></i></div>
+    <div class="line">We set the stage.</div>
+    <div class="sub">Production · Decor · Event Management</div>
+  </div></div>
+</div>
+
+<nav id="nav"><div class="wrap">
+  <a class="brand" href="#top"><img class="dk" src="img/logo-mark.png" alt="HanuVerse logo"><img class="lt" src="img/logo-mark-light.png" alt=""><span>HANUVERSE</span></a>
+  <ul id="navlinks"><li><a href="#services">Services</a></li><li><a href="#work">Our Work</a></li><li><a href="#process">Process</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+  <a class="btn" href="#contact">Plan your event</a>
+  <button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow rv">Production · Decor · Event Management</div>
+      <div class="rule rv"><i></i>◆<i></i></div>
+      <h1 class="rv">We set the stage. <em>You own the moment.</em></h1>
+      <p class="rv">College fests and concerts, corporate meets, festive decor and celebrations. One team for production, design and on-ground management, across Jaipur and beyond.</p>
+      <div class="cta rv"><a class="btn" href="#contact">Plan your event</a><a class="btn ghost" href="#work">See our work</a></div>
+    </div>
+    <div class="rv">
+      <div class="stage-wrap"><svg id="stage" viewBox="0 0 600 520" role="img" aria-label="Animated classical stage showing concerts, corporate events, festive decor and weddings">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3D38E"/><stop offset=".45" stop-color="#B7822F"/><stop offset=".7" stop-color="#F0CF88"/><stop offset="1" stop-color="#8E5F23"/></linearGradient>
+    <linearGradient id="velv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4A1218"/><stop offset=".3" stop-color="#8A2A33"/><stop offset=".55" stop-color="#5A1820"/><stop offset=".8" stop-color="#A23A45"/><stop offset="1" stop-color="#4A1218"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A4524"/><stop offset="1" stop-color="#3A1D0F"/></linearGradient>
+    <linearGradient id="beamg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE2A0" stop-opacity=".5"/><stop offset="1" stop-color="#FFE2A0" stop-opacity="0"/></linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3E1A14"/><stop offset="1" stop-color="#1A0907"/></linearGradient>
+    <radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F6C66B" stop-opacity=".55"/><stop offset="1" stop-color="#F6C66B" stop-opacity="0"/></radialGradient>
+    <clipPath id="rnd"><rect x="9" y="9" width="582" height="502" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#rnd)">
+    <rect width="600" height="520" fill="#170806"/>
+    <circle class="glow" cx="300" cy="270" r="250" fill="url(#gl)"/>
+    <polygon points="60,420 540,420 600,520 0,520" fill="url(#wood)"/>
+    <g id="planks"></g>
+    <line x1="60" y1="420" x2="540" y2="420" stroke="#D9AE5E" stroke-width="2" opacity=".6"/>
+
+    <!-- scene 0: concerts & fests -->
+    <g class="scene on" id="sc0">
+      <g id="truss" stroke="#A8936B" fill="none"></g>
+      <rect x="205" y="186" width="190" height="104" rx="4" fill="url(#scr)" stroke="#B7822F" stroke-width="2"/>
+      <g id="eqbars"></g>
+      <g id="pars"></g>
+      <rect x="176" y="330" width="54" height="90" rx="3" fill="#1E0F0B" stroke="#5A3A2A"/><circle cx="203" cy="356" r="13" fill="#3A2418" stroke="#7A5A40"/><circle cx="203" cy="394" r="17" fill="#3A2418" stroke="#7A5A40"/>
+      <rect x="370" y="330" width="54" height="90" rx="3" fill="#1E0F0B" stroke="#5A3A2A"/><circle cx="397" cy="356" r="13" fill="#3A2418" stroke="#7A5A40"/><circle cx="397" cy="394" r="17" fill="#3A2418" stroke="#7A5A40"/>
+      <line x1="300" y1="338" x2="300" y2="420" stroke="#CDB894" stroke-width="3"/><line x1="286" y1="420" x2="314" y2="420" stroke="#CDB894" stroke-width="3"/><rect x="295" y="322" width="10" height="18" rx="5" fill="#CDB894"/>
+      <g id="crowd" fill="#0C0403"></g>
+    </g>
+
+    <!-- scene 1: corporate -->
+    <g class="scene" id="sc1">
+      <rect x="170" y="150" width="260" height="150" rx="6" fill="url(#scr)" stroke="url(#gold)" stroke-width="3"/>
+      <image href="img/logo-mark-light.png" x="280" y="166" width="40"/>
+      <text x="300" y="248" text-anchor="middle" fill="#F3EAD6" font-family="Playfair Display,Georgia,serif" font-size="17" letter-spacing="6">WELCOME</text>
+      <rect x="240" y="262" width="120" height="3" fill="#D9AE5E" opacity=".8"/><rect x="262" y="274" width="76" height="3" fill="#D9AE5E" opacity=".45"/>
+      <rect x="182" y="342" width="26" height="34" rx="5" fill="#3A1A12"/><rect x="224" y="342" width="26" height="34" rx="5" fill="#3A1A12"/><rect x="266" y="342" width="26" height="34" rx="5" fill="#3A1A12"/>
+      <rect x="164" y="370" width="146" height="10" fill="#F3EAD6"/><rect x="168" y="380" width="138" height="40" fill="#E6D7B6"/>
+      <circle cx="236" cy="364" r="5" fill="#E8782A"/><circle cx="244" cy="362" r="5" fill="#F2A93B"/><circle cx="252" cy="365" r="5" fill="#FFF1C9"/>
+      <rect x="370" y="342" width="76" height="9" rx="2" fill="#7A4A2A"/><polygon points="376,351 440,351 433,420 383,420" fill="#5A2E1A"/><rect x="392" y="362" width="32" height="40" fill="url(#gold)"/>
+      <path d="M408 342q-4-20 10-28" stroke="#CDB894" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- scene 2: festive & bazaar -->
+    <g class="scene" id="sc2">
+      <g id="bunting"></g>
+      <g id="lanterns"></g>
+      <ellipse cx="300" cy="468" rx="96" ry="22" fill="none" stroke="#E8782A" stroke-width="3"/>
+      <ellipse cx="300" cy="468" rx="70" ry="15" fill="none" stroke="#F7C85A" stroke-width="3"/>
+      <ellipse cx="300" cy="468" rx="40" ry="8" fill="#A63A44"/>
+      <g id="rangoli"></g>
+      <g id="diyas"></g>
+    </g>
+
+    <!-- scene 3: weddings & celebrations -->
+    <g class="scene" id="sc3">
+      <path id="warch" d="M205 420V260A95 95 0 0 1 395 260V420" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
+      <g id="wflowers"></g>
+      <rect x="252" y="362" width="96" height="40" rx="14" fill="#F3EAD6"/><rect x="244" y="384" width="112" height="30" rx="11" fill="#E6D7B6"/>
+      <g id="wvases"></g>
+    </g>
+
+    <polygon class="beam" points="96,60 120,60 260,520 380,520" fill="url(#beamg)"/>
+    <polygon class="beam" style="animation-delay:-3.5s" points="504,60 480,60 340,520 220,520" fill="url(#beamg)"/>
+    <g id="foot"></g>
+
+    <!-- drapes -->
+    <path class="curtain" d="M60 60H178C162 170 124 248 98 292C122 334 104 420 100 520H60Z" fill="url(#velv)"/>
+    <path class="curtain" d="M540 60H422C438 170 476 248 502 292C478 334 496 420 500 520H540Z" fill="url(#velv)"/>
+    <circle cx="100" cy="292" r="7" fill="url(#gold)"/><path d="M100 299v26" stroke="#D9AE5E" stroke-width="3"/>
+    <circle cx="500" cy="292" r="7" fill="url(#gold)"/><path d="M500 299v26" stroke="#D9AE5E" stroke-width="3"/>
+    <path d="M60 60H540V90Q460 150 380 90Q300 150 220 90Q140 150 60 90Z" fill="url(#velv)"/>
+    <path d="M60 90Q140 150 220 90Q300 150 380 90Q460 150 540 90" fill="none" stroke="url(#gold)" stroke-width="8" stroke-dasharray="1.6 3"/>
+    <path d="M60 88Q140 146 220 88Q300 146 380 88Q460 146 540 88" fill="none" stroke="#B7822F" stroke-width="2"/>
+
+    <!-- proscenium frame -->
+    <path fill-rule="evenodd" fill="#2E100C" d="M0 0H600V520H0Z M60 520V100Q60 60 100 60H500Q540 60 540 100V520Z"/>
+    <path d="M60 520V100Q60 60 100 60H500Q540 60 540 100V520" fill="none" stroke="url(#gold)" stroke-width="6"/>
+    <rect x="9" y="9" width="582" height="502" rx="16" fill="none" stroke="#B7822F" stroke-width="2" opacity=".8"/>
+    <g stroke="#B7822F" stroke-width="1.5" opacity=".55"><path d="M20 130V500M32 130V500M44 130V500M556 130V500M568 130V500M580 130V500"/></g>
+    <rect x="14" y="112" width="38" height="10" fill="url(#gold)"/><rect x="548" y="112" width="38" height="10" fill="url(#gold)"/>
+    <path d="M262 2H338L326 66H274Z" fill="url(#gold)"/>
+    <image href="img/logo-mark.png" x="286" y="12" width="28"/>
+  </g>
+</svg></div>
+      <div class="now">Now on stage<b id="sceneName">Concerts &amp; Fests</b></div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+  <div class="scroll">SCROLL</div>
+</header>
+
+<main>
+<div class="ribbon" aria-hidden="true"><div id="rib"></div></div>
+
+<section id="services"><div class="wrap">
+  <div class="head rv"><div class="eyebrow">What we do</div><h2>One team, every detail</h2></div>
+  <div class="grid">
+    <div class="card rv"><div class="n">01</div><h3>Production &amp; Staging</h3><p>Stage, sound, lighting, LED and logistics for fests, concerts and live shows.</p></div>
+    <div class="card rv"><div class="n">02</div><h3>Decor &amp; Design</h3><p>Stage design, theme decor, festive and bazaar decoration, and celebration setups.</p></div>
+    <div class="card rv"><div class="n">03</div><h3>Event Management</h3><p>End-to-end planning and on-ground coordination for events of any size.</p></div>
+    <div class="card rv"><div class="n">04</div><h3>Corporate &amp; Sports</h3><p>Corporate events, auctions and tournaments managed start to finish.</p></div>
+  </div>
+</div></section>
+
+<section class="stats" id="statsSection" hidden><div class="wrap"><div class="grid" id="stats"></div></div></section>
+
+<section id="work" style="padding-top:60px"><div class="wrap">
+  <div class="head rv"><div class="eyebrow">Portfolio</div><h2>Our work</h2></div>
+  <div class="filters rv" id="filters"></div>
+  <div class="work" id="workGrid"></div>
+  <p class="pnote">Tiles marked <b>Partner Work</b> show work by our partners <a href="https://www.instagram.com/dream.stream.events/" target="_blank" rel="noopener">Dream Stream Events</a> and <a href="https://www.instagram.com/the_wedding_toli_india/" target="_blank" rel="noopener">The Wedding Toli</a>, credited when you open each photo.</p>
+</div></section>
+
+<div class="band" id="partner"><div class="wrap rv">
+  <div class="eyebrow" style="color:var(--gold-2)">Official Event Partner</div>
+  <h2>Zest'26 · <em>St. Xavier's College, Jaipur</em></h2>
+  <p>Trusted by one of Jaipur's best-known colleges to run its annual fest.</p>
+</div></div>
+
+<section id="process"><div class="wrap">
+  <div class="head rv"><div class="eyebrow">How we work</div><h2>From first call to final farewell</h2></div>
+  <div class="steps">
+    <div class="step rv"><h3>Discuss</h3><p>You tell us the date, city, budget and vision.</p></div>
+    <div class="step rv"><h3>Design</h3><p>We build the concept, decor plan and schedule.</p></div>
+    <div class="step rv"><h3>Deliver</h3><p>Our crew sets up, runs the day and handles the unexpected.</p></div>
+    <div class="step rv"><h3>Celebrate</h3><p>You enjoy the event. We handle the wrap-up.</p></div>
+  </div>
+  <div class="panel rv" id="about">
+    <h3 style="font-size:30px">Why HanuVerse</h3>
+    <ul>
+      <li>One point of contact from planning to execution</li>
+      <li>A trusted network of decor, florist, production and hospitality partners</li>
+      <li>Last-minute work handled with care</li>
+      <li>Experience across college fests, corporate events, public festive decor and celebrations</li>
+      <li>Event management backed by legal know-how</li>
+      <li>References and documents available on request</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap rv">
+  <img src="img/logo-full.png" alt="HanuVerse logo">
+  <h2>Let's plan your event</h2>
+  <p>Tell us the date, city and kind of event. We'll come back with a plan.</p>
+  <div class="ccards">
+    <a class="ccard" href="tel:+917073978784"><small>Call</small><b>+91 70739 78784</b></a>
+    <a class="ccard" href="tel:+919529455124"><small>Call</small><b>+91 95294 55124</b></a>
+    <a class="ccard" href="https://wa.me/917073978784" target="_blank" rel="noopener"><small>WhatsApp</small><b>Chat with us</b></a>
+    <a class="ccard" href="mailto:contact.shub24@gmail.com"><small>Email</small><b>contact.shub24@gmail.com</b></a>
+    <a class="ccard" href="https://www.instagram.com/hanu_verse/" target="_blank" rel="noopener"><small>Instagram</small><b>@hanu_verse</b></a>
+  </div>
+  <p class="where">Based in Jaipur, Rajasthan · Events across India</p>
+</div></section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap fgrid">
+    <div>
+      <img class="flogo" src="img/logo-full-light.png" alt="HanuVerse Enterprises" loading="lazy">
+      <p>Production, decor and event management for fests, corporate events, festive decor and celebrations.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#services">Services</a><a href="#work">Our work</a><a href="#process">How we work</a><a href="#contact">Plan your event</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+917073978784">+91 70739 78784</a>
+      <a href="tel:+919529455124">+91 95294 55124</a>
+      <a href="mailto:contact.shub24@gmail.com">contact.shub24@gmail.com</a>
+      <a href="https://www.instagram.com/hanu_verse/" target="_blank" rel="noopener">Instagram · @hanu_verse</a>
+      <span>Jaipur, Rajasthan, India</span>
+    </div>
+  </div>
+  <div class="fbot">© <span id="yr"></span> M/S HanuVerse Enterprises. All rights reserved.<span class="legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></span></div>
+</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo"><button class="lbx" aria-label="Close">×</button><figure id="lbf"></figure></div>
+
+<script>
+/* ======== EDIT WITH REAL INFORMATION ONLY ========
+   img: path to a real photo you own, e.g. "img/zest26.jpg". Leave "" for a branded tile.
+   STATS: add true numbers only, e.g. {n:"40+", l:"Events delivered"}. Empty = section hidden. */
+const STATS = [];
+const EVENTS = [
+  {c:"Fest",      n:"Zest'26",              d:"St. Xavier's College, Jaipur. Event partner and management.", img:"img/ig/zest26.jpg"},
+  {c:"Corporate", n:"Corporate Events",     d:"Detailed corporate event decor and set design.", img:"img/ig/corporate.jpg"},
+  {c:"Corporate", n:"Sports & Auctions",    d:"Auction and tournament management for cricket, football and more.", img:"img/ig/sports-auction.jpg"},
+  {c:"Festive",   n:"Gangori Bazaar",       d:"Bazaar decoration for Gangori Bazaar Vyapaar Mandal.", img:"img/ig/gangori-bazaar.jpg"},
+  {c:"Festive",   n:"Diwali Bazaar 2025",   d:"Festive Diwali lighting and decor for the bazaar.", img:"img/ig/diwali-bazaar.jpg"},
+  {c:"Wedding",   n:"Sumesh & Arpita",      d:"Sangeet and haldi at K K Royal Hotel, with partner decor and production.", img:"img/ig/sumesh-arpita.jpg"},
+  {c:"Wedding",   n:"Neha & Jai",           d:"Wedding celebration decor and haldi theme.", img:"img/ig/neha-jai.jpg"},
+  {c:"Wedding",   n:"Sangeet Night",        d:"An immersive sangeet designed so every corner is photo-ready.", img:"img/ig/sangeet.jpg"},
+  {c:"Wedding",   n:"Haldi Decor",          d:"Modern haldi decor ideas, with custom games and immersive setups.", img:"img/ig/haldi-decor.jpg"},
+  {c:"Wedding",   n:"Haldi Carnival",       d:"Carnival-style haldi with custom games and yellow-themed decor.", img:"img/ig/haldi-games.jpg"},
+  {c:"Ceremony",  n:"Roka Ceremony",        d:"Reema & Shubham's roka, planned and styled.", img:"img/ig/roka-reema.jpg"},
+  {c:"Ceremony",  n:"Overnight Roka",       d:"A last-minute roka, themed and delivered on time.", img:"img/ig/roka-overnight.jpg"},
+  {c:"Ceremony",  n:"Jalva Ceremony",       d:"Tridha's Jalva ceremony, planned and decorated.", img:"img/ig/jalva.jpg"}
+];
+/* Partner work: shown under the "Partner Work" tab; the full-size view credits and links the partner. */
+const PARTNERS = {
+  ds:{n:"Dream Stream Events", u:"https://www.instagram.com/dream.stream.events/"},
+  wt:{n:"The Wedding Toli",    u:"https://www.instagram.com/the_wedding_toli_india/"}
+};
+const PARTNER_WORK = [
+  {p:"ds", n:"Dazzling Stage Entrance", img:"img/partners/ds-stage.jpg"},
+  {p:"wt", n:"Art Deco Night",          img:"img/partners/wt-artdeco.jpg"},
+  {p:"ds", n:"Heritage Garden Wedding", img:"img/partners/ds-heritage.jpg"},
+  {p:"wt", n:"Riviera Garden Decor",    img:"img/partners/wt-riviera.jpg"},
+  {p:"ds", n:"Haldi in Yellow",         img:"img/partners/ds-haldi.jpg"},
+  {p:"wt", n:"Mayra Celebration",       img:"img/partners/wt-mayra.jpg"},
+  {p:"ds", n:"S & I Wedding",           img:"img/partners/ds-s-and-i.jpg"},
+  {p:"wt", n:"Sufi Night",              img:"img/partners/wt-sufi.jpg"},
+  {p:"ds", n:"The First Ritual",        img:"img/partners/ds-ritual.jpg"},
+  {p:"wt", n:"16 Shringaar",            img:"img/partners/wt-shringaar.jpg"},
+  {p:"ds", n:"Baraat to Vidaai",        img:"img/partners/ds-forever.jpg"},
+  {p:"wt", n:"The Toli Vision",         img:"img/partners/wt-vision.jpg"}
+];
+PARTNER_WORK.forEach(w=>EVENTS.push({c:"Partner Work", n:w.n, d:"Work by "+PARTNERS[w.p].n+".", img:w.img, p:w.p}));
+/* ================================================= */
+const $ = s => document.querySelector(s);
+const tile = (e, cls="") => `<div class="tile ${cls}" data-c="${e.c}" data-i="${EVENTS.indexOf(e)}" tabindex="0" role="button" aria-label="Open photo: ${e.n}">
+  ${e.img?`<img class="ph" src="${e.img}" alt="${e.n}" loading="lazy" decoding="async">`:""}<span class="tag">${e.c}</span><div class="cap">${e.n}</div></div>`;
+
+/* animated stage */
+(function buildStage(){
+  const NS="http://www.w3.org/2000/svg", rnd=(a,b)=>a+Math.random()*(b-a), G=id=>document.getElementById(id);
+  const mk=(t,a,p)=>{const e=document.createElementNS(NS,t); for(const k in a) e.setAttribute(k,a[k]); p.appendChild(e); return e;};
+  const pal=["#F2A93B","#E8782A","#D9AE5E","#FFF1C9","#F7C85A","#A63A44"];
+  const delay=(e,m)=>{e.style.animationDelay=(-rnd(0,m)).toFixed(2)+"s"; return e;};
+  for(let i=0;i<=12;i++) mk("line",{x1:60+40*i,y1:420,x2:50*i,y2:520,stroke:"#000",opacity:.22},G("planks"));
+  for(let x=80;x<=520;x+=22) delay(mk("circle",{cx:x,cy:428,r:2.6,fill:"#FFE6A8",class:"tw"},G("foot")),2.4);
+  // concert
+  const tr=G("truss"); let d="M150 140H450M150 156H450";
+  for(let x=150;x<450;x+=16) d+=`M${x} 140L${x+8} 156L${x+16} 140`;
+  for(const x of [150,434]){ d+=`M${x} 156V420M${x+16} 156V420`; for(let y=156;y<420;y+=16) d+=`M${x} ${y}L${x+16} ${y+8}L${x} ${y+16}`; }
+  mk("path",{d,"stroke-width":2},tr);
+  for(let i=0;i<14;i++){const h=rnd(30,80); delay(mk("rect",{x:214+i*13,y:282-h,width:9,height:h,rx:2,fill:pal[i%5],class:"eq",opacity:.9},G("eqbars")),.8);}
+  for(let i=0;i<7;i++) delay(mk("circle",{cx:180+i*40,cy:166,r:7,fill:["#FFD27A","#FF9F5A","#FFE6A8"][i%3],class:"par"},G("pars")),1.3);
+  for(let x=20;x<600;x+=30){const y=rnd(492,506); mk("circle",{cx:x,cy:y,r:12},G("crowd")); mk("rect",{x:x-15,y:y+8,width:30,height:30,rx:10},G("crowd"));
+    if(Math.random()<.45) mk("path",{d:`M${x+6} ${y+6}L${x+rnd(4,22)} ${y-rnd(34,52)}`,stroke:"#0C0403","stroke-width":6,"stroke-linecap":"round"},G("crowd"));}
+  // festive
+  for(const [y0,sag] of [[112,34],[134,26]]){ const b=G("bunting");
+    for(let i=0;i<15;i++){const t0=i/15,t1=(i+1)/15,P=t=>[130+340*t,y0+4*sag*t*(1-t)];const[a,b1]=P(t0),[c,d1]=P(t1);
+      mk("path",{d:`M${a} ${b1}L${c} ${d1}L${(a+c)/2} ${(b1+d1)/2+20}Z`,fill:pal[(i+(y0>120?2:0))%pal.length]},b);}}
+  [175,238,300,362,425].forEach((x,k)=>{const len=[70,96,112,96,70][k]; const g=delay(mk("g",{class:"strand"},G("lanterns")),4.5);
+    mk("line",{x1:x,y1:150,x2:x,y2:150+len,stroke:"#D9AE5E","stroke-width":1.4},g);
+    delay(mk("circle",{cx:x,cy:150+len+18,r:30,fill:"#FFC86B",opacity:.25,class:"tw"},g),2.4);
+    mk("path",{d:`M${x} ${150+len}L${x+15} ${150+len+18}L${x} ${150+len+40}L${x-15} ${150+len+18}Z`,fill:k%2?"#A63A44":"#E8782A",stroke:"#F3D38E","stroke-width":1.5},g);
+    mk("line",{x1:x,y1:150+len+40,x2:x,y2:150+len+58,stroke:"#F3D38E","stroke-width":2},g);});
+  for(let i=0;i<16;i++){const a=i/16*Math.PI*2; mk("circle",{cx:300+Math.cos(a)*84,cy:468+Math.sin(a)*19,r:4,fill:pal[i%pal.length]},G("rangoli"));}
+  for(let x=170;x<=430;x+=26){ if(x>250&&x<350) continue; const g=G("diyas");
+    mk("path",{d:`M${x-9} 414Q${x} 426 ${x+9} 414Z`,fill:"#B5651D"},g); delay(mk("ellipse",{cx:x,cy:408,rx:3,ry:6,fill:"#FFD27A",class:"flick"},g),.45);}
+  // wedding
+  const wa=G("warch"), L=wa.getTotalLength();
+  for(let i=0;i<=44;i++){const pt=wa.getPointAtLength(L*i/44); mk("circle",{cx:pt.x+rnd(-3,3),cy:pt.y+rnd(-3,3),r:rnd(5,9),fill:pal[i%5]},G("wflowers"));}
+  [[225,404],[375,404]].forEach(([cx,cy])=>{mk("rect",{x:cx-11,y:cy,width:22,height:16,rx:4,fill:"url(#gold)"},G("wvases"));
+    for(let i=0;i<10;i++) mk("circle",{cx:cx+rnd(-18,18),cy:cy-rnd(0,26),r:rnd(5,8),fill:pal[i%5]},G("wvases"));});
+  // cycle scenes
+  const names=["Concerts &amp; Fests","Corporate Events","Festive &amp; Bazaar Decor","Weddings &amp; Celebrations"];
+  const sc=[0,1,2,3].map(i=>G("sc"+i)), dots=G("dots"); let cur=0, timer;
+  dots.innerHTML=names.map((n,i)=>`<button class="${i?"":"on"}" aria-label="Show ${n}"></button>`).join("");
+  const show=n=>{cur=n; sc.forEach((g,i)=>g.classList.toggle("on",i===n)); [...dots.children].forEach((b,i)=>b.classList.toggle("on",i===n)); G("sceneName").innerHTML=names[n];};
+  const start=()=>{clearInterval(timer); timer=setInterval(()=>show((cur+1)%4),3800);};
+  dots.addEventListener("click",e=>{const i=[...dots.children].indexOf(e.target); if(i>=0){show(i); start();}});
+  new IntersectionObserver(([en])=>{ G("stage").classList.toggle("paused",!en.isIntersecting); if(en.isIntersecting) start(); else clearInterval(timer); }).observe(G("stage"));
+})();
+$("#rib").innerHTML = [...Array(2)].map(()=>["Production","Stage &amp; Sound","College Fests","Corporate Events","Festive Decor","Concerts","Sports &amp; Auctions","Celebrations"].map(t=>`<span>${t}</span><i>◆</i>`).join("")).join("");
+
+const cats = ["All",...new Set(EVENTS.map(e=>e.c))];
+$("#filters").innerHTML = cats.map((c,i)=>`<button class="${i?"":"on"}" data-f="${c}" aria-pressed="${!i}">${c}</button>`).join("");
+$("#workGrid").innerHTML = EVENTS.map(e=>tile(e)).join("");
+$("#filters").addEventListener("click",ev=>{
+  const b=ev.target.closest("button"); if(!b) return;
+  document.querySelectorAll("#filters button").forEach(x=>{x.classList.toggle("on",x===b); x.setAttribute("aria-pressed",x===b);});
+  document.querySelectorAll("#workGrid .tile").forEach(t=>t.classList.toggle("hide",b.dataset.f!=="All"&&t.dataset.c!==b.dataset.f));
+});
+
+/* lightbox */
+let lastTile=null;
+const closeLb=()=>{ if(!$("#lb").classList.contains("open")) return; $("#lb").classList.remove("open"); if(lastTile) lastTile.focus(); };
+const openLb=t=>{ const e=EVENTS[t.dataset.i]; lastTile=t;
+  $("#lbf").innerHTML=(e.img?`<img src="${e.img}" alt="${e.n}">`:`<div class="ph-fallback"><img src="img/logo-mark-light.png" alt=""></div>`)+`<figcaption>${e.n}<small>${e.p?`Work by <a href="${PARTNERS[e.p].u}" target="_blank" rel="noopener" style="color:var(--gold-2)">${PARTNERS[e.p].n}</a>`:e.d}</small></figcaption>`;
+  $("#lb").classList.add("open"); $(".lbx").focus(); };
+document.addEventListener("click",ev=>{
+  const t=ev.target.closest(".tile"); if(t){ openLb(t); return; }
+  if(ev.target.closest("#lb") && !ev.target.closest("#lbf a")) closeLb();
+});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape") closeLb();
+  const t=e.target.closest&&e.target.closest(".tile"); if(t&&(e.key==="Enter"||e.key===" ")){ e.preventDefault(); openLb(t); }
+});
+
+/* stats with count-up */
+if(STATS.length){ $("#statsSection").hidden=false;
+  $("#stats").innerHTML=STATS.map(s=>`<div class="rv"><b data-n="${s.n}">${s.n}</b><span>${s.l}</span></div>`).join(""); }
+const countUp=el=>{const m=el.dataset.n.match(/^(\D*)(\d+)(.*)$/); if(!m) return; const to=+m[2]; let v=0;
+  const id=setInterval(()=>{v+=Math.max(1,Math.ceil(to/40)); if(v>=to){v=to;clearInterval(id)} el.textContent=m[1]+v+m[3]},30)};
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); const b=e.target.querySelector("b[data-n]"); if(b) countUp(b); io.unobserve(e.target);} }),{threshold:.15});
+const watch=()=>document.querySelectorAll(".rv:not(.in)").forEach(el=>io.observe(el));
+watch();
+
+/* nav background */
+const nav=$("#nav"), menu=$(".menu");
+const onScroll=()=>nav.classList.toggle("solid",scrollY>40||nav.classList.contains("open")); addEventListener("scroll",onScroll,{passive:true}); onScroll();
+const setMenu=o=>{ nav.classList.toggle("open",o); menu.setAttribute("aria-expanded",o); menu.setAttribute("aria-label",o?"Close menu":"Open menu"); onScroll(); };
+menu.addEventListener("click",()=>setMenu(!nav.classList.contains("open")));
+$("#navlinks").addEventListener("click",e=>{ if(e.target.closest("a")) setMenu(false); });
+
+/* opening: curtains part (only on the first visit of a session; flags set in <head>) */
+const H=document.documentElement, intro=$("#intro");
+if(H.classList.contains("intro")){
+  const openIntro=()=>{ if(intro.classList.contains("open")) return; intro.classList.add("open");
+    setTimeout(()=>H.classList.remove("intro","lock"),1800); };
+  intro.addEventListener("click",openIntro); setTimeout(openIntro,2900);
+}
+$("#yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
